@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabzlearn - form validation</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body>
+    <!-- <h1 id="title">فرم لاگین سبزلرن</h1> -->
+
+    <div class="login-form">
+      <header class="form-header">
+        <img src="./public/images/logo.png" class="w-14" alt="sabzlearn" />
+        <span class="font-YekanBakh-Boldt"> سبزلرن </span>
+      </header>
+      <main class="w-full space-y-3">
+        <div class="input-card">
+          <input
+            type="text"
+            placeholder="نام کاربری ..."
+            class="input username"
+            autocomplete="off"
+          />
+          <p class="message hidden username-message"></p>
+        </div>
+        <div class="input-card">
+          <input
+            type="password"
+            placeholder="گذرواژه ... "
+            class="input password"
+          />
+          <p class="message hidden password-message"></p>
+        </div>
+      </main>
+      <footer class="w-full space-y-5">
+        <button class="login-button">ورود</button>
+
+        <div class="continue-with"></div>
+
+        <button class="google-button">
+          <img src="./public/images/google.png" class="w-6" alt="google" />
+          <span> ورود با گوگل </span>
+        </button>
+      </footer>
+    </div>
+
+    <div class="modal-screen hidden">
+      <div class="modal-card">
+        <!-- success.png, failed.png -->
+        <img src="./public/images/success.png" class="w-12" alt="Logo" id="final-img" />
+        <p class="modal-text">عملیات با موفقیت انجام شد</p>
+
+        <button class="modal-button">تائید</button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
