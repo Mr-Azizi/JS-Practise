@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabzlearn - show password</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="form">
+        <header>
+          <div class="flex items-center justify-center gap-2">
+            <img src="./public/images/logo.png" class="w-14" alt="" />
+            <span class="text-xl"> Sabzlearn </span>
+          </div>
+          <p class="text-2xl">Welcome back 😎🤞</p>
+        </header>
+        <main class="w-full space-y-3">
+          <div class="input-card">
+            <input type="text" placeholder="Please enter the username.." />
+          </div>
+          <div class="input-card">
+            <input
+              type="password"
+              class="password"
+              placeholder="Please enter the password.."
+            />
+            <div
+              class="absolute px-3 shadow-inner shadow-sky-600 duration-150 hover:bg-opacity-90 border border-white/10 h-full flex items-center justify-center right-0 max-w-max m-auto cursor-pointer bg-sky-500 text-white show-password"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="flex items-center select-none gap-1 text-sm text-white/60"
+          >
+            <input type="checkbox" name="" id="remember-me" />
+            <label for="remember-me"> Remember me </label>
+          </div>
+          <button class="button">Continue</button>
+        </main>
+        <footer>
+          <div class="break">
+            <p>Or login with</p>
+          </div>
+
+          <div class="google">
+            <span>
+              <img src="./public/images/google.png" class="size-8" alt="" />
+            </span>
+            Continue with google
+          </div>
+          <div class="google">
+            <span>
+              <img src="./public/images/meta.png" class="size-8" alt="" />
+            </span>
+            Continue with Meta
+          </div>
+        </footer>
+      </section>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
