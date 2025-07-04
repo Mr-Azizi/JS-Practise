@@ -1,0 +1,53 @@
+<!-- 
+  if user pressed the any key, add the 'key-pressed' class name to 'body' !!
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body >
+    <div class="press-any-key">
+      <div class="card">
+        <p>Please enter the any key to start !</p>
+      </div>
+    </div>
+
+    <section class="content">
+      <h1>The key you pressed: <span class="keycode">Alt</span></h1>
+      <p class="keycode-title">42</p>
+      <p>Key Code Information:</p>
+      <section class="wrapper">
+        <div class="data-card">
+          <header>event.key</header>
+          <main class="key">Alt</main>
+        </div>
+        <div class="data-card">
+          <header>event.location</header>
+          <main class="location">General keys</main>
+        </div>
+        <div class="data-card">
+          <header>event.code</header>
+          <main class="code">AltLeft</main>
+        </div>
+        <div class="data-card">
+          <header>event.which</header>
+          <main class="which">18</main>
+        </div>
+      </section>
+    </section>
+    <div class="copyright">
+      &copy; Developed with 💚 in
+      <a href="https://sabzlearn.ir" class="copy">Sabzlearn</a>
+    </div>
+
+    <script src="./app/app.js"></script>
+  </body>
+</html>
