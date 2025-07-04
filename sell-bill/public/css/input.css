@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: "YekanBakh-Regular";
+  src: url(../fonts/YekanBakh-Regular.ttf);
+}
+
+@font-face {
+  font-family: "YekanBakh-Medium";
+  src: url(../fonts/YekanBakh-Medium.ttf);
+}
+
+@font-face {
+  font-family: "YekanBakh-Boldt";
+  src: url(../fonts/YekanBakh-Boldt.ttf);
+}
+
+
+.information {
+  @apply flex select-none child:flex child:items-center child:gap-1 items-center justify-center gap-2 text-zinc-400;
+}
+
+.active-info {
+  @apply text-[#342056];
+}
+
+.text-main {
+  @apply text-[#342056];
+}
+
+.circle {
+  @apply size-6 rounded-full flex items-center font-YekanBakh-Regular justify-center text-white bg-zinc-400;
+}
+
+.circle.active {
+  @apply bg-[#40286a!important];
+}
+
+.break {
+  @apply w-10 h-px bg-black/20;
+}
+
+body {
+  @apply bg-[#f9f9f9] flex flex-col min-h-screen h-full items-center justify-center gap-10 font-YekanBakh-Medium py-10;
+}
+
+.text-secondary {
+  @apply text-[#9194aa];
+}
+
+label {
+  @apply select-none;
+}
+
+input {
+  @apply block h-10 w-full rounded outline-none duration-150 focus:ring-2 ring-sky-500/80 border px-5 placeholder:text-sm;
+}
+
+select {
+  @apply appearance-none border mt-2 row-start-1 outline-none rounded duration-150 focus:ring-4 w-full p-2 col-start-1;
+}
+
+.content {
+  @apply w-2/3 p-6 mb-40 shadow rounded-lg max-h-max bg-white
+}
+
+.wrapper {
+  @apply container flex gap-8 justify-between
+}
+
+.content-section {
+  @apply mb-10 mt-5 space-y-3 child:space-y-2
+}
+
+.ways {
+  @apply mt-5 space-y-3
+}
+
+.buttons-wrapper {
+  @apply pt-10 flex items-center justify-end gap-2
+}
+
+.cancel-button {
+  @apply px-4 py-1.5 rounded-md text-white bg-gradient-to-r from-red-500 to-red-400 duration-150 focus:ring-4 ring-red-500/50
+}
+
+.confirm-button {
+  @apply px-4 py-1.5 rounded-md text-white bg-gradient-to-r from-teal-500 to-teal-600 duration-150 focus:ring-4 ring-teal-500/50
+}
+
+.inputs-wrapper {
+  @apply mb-10 mt-5 space-y-3 child:space-y-2
+}
+
+.sidebar {
+  @apply w-1/3 h-[700px] flex flex-col justify-between
+}
+
+.sidebar-title {
+  @apply font-YekanBakh-Regular text-2xl text-[#60468e]
+}
+
+.bold-title {
+  @apply tracking-tight text-[#3F2C5F] font-bold
+}
+
+.sidebar-caption {
+  @apply mt-3 text-secondary font-YekanBakh-Regular text-lg tracking-tight text-justify
+}

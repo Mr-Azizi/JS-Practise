@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabzlearn - Ticket reservation</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body>
+    <header class="information">
+      <div class="active-info">
+        <div class="circle active">1</div>
+        <p>انتخاب مبدا و مقصد</p>
+      </div>
+      <div class="break"></div>
+      <div>
+        <div class="circle">2</div>
+        <p>تائید و احراز هویت</p>
+      </div>
+      <div class="break"></div>
+      <div>
+        <div class="circle">3</div>
+        <p>پرداخت و تائید نهایی</p>
+      </div>
+      <div class="break"></div>
+      <div>
+        <div class="circle">4</div>
+        <p>دانلود و دریافت تیکت</p>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="wrapper">
+      <section class="content">
+        <p class="text-main">لطفا مشخصات زیر را تکمیل نمائید</p>
+        <div class="inputs-wrapper">
+          <div>
+            <label class="text-secondary text-sm" for="fullName">
+              نام و نام خانوادگی را وارد نمائید :
+            </label>
+            <input
+              id="fullName"
+              type="text"
+              placeholder="مثال: امیرحسین تیموری"
+            />
+          </div>
+          <div>
+            <label class="text-secondary text-sm" for="phoneNumber">
+              شماره موبایل را وارد نمائید :
+            </label>
+            <input
+              id="phoneNumber"
+              type="text"
+              placeholder="مثال: 09911871596"
+            />
+          </div>
+          <div>
+            <label class="text-secondary text-sm" for="email">
+              آدرس ایمیل را وارد نمائید :
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="مثال: example@gmail.com"
+            />
+          </div>
+        </div>
+
+        <!-- Select boxes -->
+        <div>
+          <p class="text-main">لطفا مسیر مبدا و مقصد را وارد نمائید</p>
+          <div class="ways">
+            <div>
+              <label class="text-secondary text-sm">
+                شهر مبدا را وارد نمائید:
+              </label>
+              <select class="Province-select">
+                <option selected>لطفا انتخاب نمائید ...</option>
+                
+              </select>
+            </div>
+            <div class="">
+              <label class="text-secondary text-sm">
+                شهر مقصد را وارد نمائید:
+              </label>
+              <select class="city-select">
+                <option selected>لطفا انتخاب نمائید ...</option>
+                
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-wrapper">
+          <button class="cancel-button">انصراف</button>
+          <button class="confirm-button">تائید و ادامه</button>
+        </div>
+      </section>
+      <div class="sidebar">
+        <div>
+          <h3 class="sidebar-title">
+            سامانه مسافرتی
+            <span class="bold-title"> -مسیر سبز- </span>
+          </h3>
+          <p class="sidebar-caption">
+            سامانه مسافرتی مسیر سبز یک شرکت مستقل و نوآور در زمینه ارائه خدمات
+            مسافرتی و گردشگری است. این سامانه با هدف تسهیل و بهینه‌سازی
+            فرآیندهای مرتبط با سفرهای داخلی و خارجی طراحی شده و تلاش دارد با
+            ارائه خدماتی جامع و متنوع، تجربه‌ای بی‌نظیر و راحت برای مسافران
+            فراهم کند.
+          </p>
+        </div>
+        <img src="./public/image/travel.png" alt="" />
+      </div>
+    </main>
+  </body>
+  <script src="./app/app.js"></script>
+</html>
