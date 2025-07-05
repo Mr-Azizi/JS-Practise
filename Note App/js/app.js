@@ -6,6 +6,9 @@ const colorPic = document.querySelectorAll(".color-box");
 const notesContainer = document.querySelector(".notes-container");
 const textArea = document.querySelector("textarea");
 const addNoteBtn = document.querySelector(".continue");
+const SearchInput = document.querySelector(".search-input");
+const searchIcon = document.querySelector(".search-icon");
+
 
 let mainColor ;
 
@@ -23,7 +26,7 @@ function addNote(){
     articleElm.style.backgroundColor = mainColor;
 
     const noteText = document.createElement("p");
-    noteText.classList.add("note-text");
+    noteText.classList.add("note-content");
     noteText.textContent = note;
 
     const divElm = document.createElement("div");
@@ -54,6 +57,20 @@ colorPic.forEach(function(color) {
     })
 })
 
+function searchNotes() {
+    const searchValue = SearchInput.value;
+    const notes = document.querySelectorAll(".note");
+
+    notes.forEach(function(note){
+        const noteText = note.querySelector(".note-content")
+        if( noteText.textContent.includes(searchValue)) {
+            note.style.display = "flex";
+        }else {
+            note.style.display = "none";
+        }
+    })
+
+}
 createButton.addEventListener("click", createNote);
 closeXBtn.addEventListener("click", closeNote);
 closeBtn.addEventListener("click", closeNote);
@@ -63,3 +80,4 @@ document.body.addEventListener("keydown", function (event) {
     }
 })
 addNoteBtn.addEventListener("click", addNote);
+searchIcon.addEventListener("click", searchNotes);
