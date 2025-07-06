@@ -17,26 +17,38 @@ function hideModal(){
 function addTodo(){
     
     const newTodoTitle = Input.value;
-    let articlesElm = document.createElement("article");
-    articlesElm.className = "todo";
+    TodosContainer.insertAdjacentHTML(
+        "afterbegin",
+        `<article class="todo">
+        <div class="todo-data">
+        <p>${newTodoTitle}</p>
+        </div>
+        <div class="todo-buttons">
+        <button class="delete">حذف</button>
+        </div>
+        </article>`
+    )
     
-    const todoDataDiv = document.createElement("div");
-    todoDataDiv.className = "todo-data";
-    todoDataDiv.innerHTML = `<p>${newTodoTitle}</p>`;
+    // let articlesElm = document.createElement("article");
+    // articlesElm.className = "todo";
+    // const todoDataDiv = document.createElement("div");
+    // todoDataDiv.className = "todo-data";
+    // todoDataDiv.innerHTML = `<p>${newTodoTitle}</p>`;
 
-    const todoButtonsDiv = document.createElement("div");
-    todoButtonsDiv.className = "todo-buttons";
+    // const todoButtonsDiv = document.createElement("div");
+    // todoButtonsDiv.className = "todo-buttons";
 
-    const removeTodoBtn = document.createElement("button");
-    removeTodoBtn.innerHTML = "حذف";
-    removeTodoBtn.classList = "delete";
+    // const removeTodoBtn = document.createElement("button");
+    // removeTodoBtn.innerHTML = "حذف";
+    // removeTodoBtn.classList = "delete";
 
     
-    todoButtonsDiv.append(removeTodoBtn);
-    articlesElm.append(todoDataDiv);
-    articlesElm.append(todoButtonsDiv);
-    TodosContainer.append(articlesElm);
+    // todoButtonsDiv.append(removeTodoBtn);
+    // articlesElm.append(todoDataDiv);
+    // articlesElm.append(todoButtonsDiv);
+    // TodosContainer.append(articlesElm);
     
+    const removeTodoBtn = document.querySelector(".delete");
     removeTodoBtn.addEventListener("click", function(event){
         event.target.parentElement.parentElement.remove();
     });
