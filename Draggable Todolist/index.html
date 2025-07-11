@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabzlearn - Drag & Drop Todo-app</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body>
+    <div class="create-section">
+      <h1>تودو لیست VIP</h1>
+      <button class="open-modal">
+        ایجاد
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4.5v15m7.5-7.5h-15"
+          />
+        </svg>
+      </button>
+    </div>
+    <section class="client-container">
+      <section class="status-section default">
+        <header>
+          <p>برای انجام</p>
+        </header>
+        <!-- Sample Todo -->
+        <!-- <article id="test" class="todo" draggable="true">
+          <p>یادگیری نکست جی اس در 2024</p>
+        </article> -->
+      </section>
+      <section class="status-section in-progress">
+        <header>
+          <p>درحال انجام</p>
+        </header>
+      </section>
+      <section class="status-section complete">
+        <header>
+          <p>تکمیل</p>
+        </header>
+      </section>
+      <section class="status-section trash">
+        <header>
+          <p>هرزنامه</p>
+        </header>
+      </section>
+    </section>
+
+    <div class="modal-screen hidden">
+      <article class="modal">
+        <header>
+          <span> ایجاد تودو</span>
+          <button class="close-X-btn">X</button>
+        </header>
+        <main>
+          <div class="input-card">
+            <input
+              type="text"
+              class="todo-input"
+              placeholder="لطفا محتوای تودو را وارد نمائید .."
+            />
+          </div>
+        </main>
+        <footer>
+          <button class="close">انصراف</button>
+          <button class="continue">ایجاد</button>
+        </footer>
+      </article>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
