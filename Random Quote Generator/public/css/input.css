@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: "Sans-Regular";
+  src: url(../fonts/Sans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Medium";
+  src: url(../fonts/Sans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Sans-DemiBold";
+  src: url(../fonts/Sans-DemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Bold";
+  src: url(../fonts/Sans-Bold.ttf);
+}
+
+body {
+  @apply font-Sans-Regular w-full h-screen flex items-center justify-center bg-zinc-900;
+}
+
+.icon {
+  @apply absolute -top-8 -start-8 size-16  sm:h-24 sm:w-24 text-neutral-700/60;
+}
+
+.blockquote {
+  @apply relative text-center max-w-lg mx-auto;
+}
+
+.card {
+  @apply relative z-10 p-4 bg-zinc-800 px-20 rounded;
+}
+
+.p-element {
+  @apply text-lg text-gray-800;
+}
+
+.quote {
+  @apply relative z-10 text-white;
+}
+
+.container-card {
+  @apply text-xl
+}
+
+
+.author-card {
+  @apply mt-10 text-white/50
+}
