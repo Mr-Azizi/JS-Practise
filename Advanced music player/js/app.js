@@ -82,6 +82,7 @@ function ShowMusics() {
     playBtn.addEventListener("click", function (event) {
       let title = event.target.parentElement.parentElement.parentElement.parentElement.querySelector("p").textContent;
       const mainMusicSrc = event.target.dataset.src;
+      console.log(mainMusicSrc);
       music.setAttribute("src", mainMusicSrc);
       music.play();
       musicName.textContent = title;

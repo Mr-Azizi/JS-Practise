@@ -710,6 +710,10 @@ h1 {
   height: 1.75rem;
 }
 
+.play-btn > i {
+  pointer-events: none;
+}
+
 .back-forward {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
