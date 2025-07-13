@@ -1,0 +1,120 @@
+<!-- 
+  classes:
+     todocard {
+         class: todo & complete, date
+     },
+
+     modal: {
+     class: modal-screen, hidden
+     }
+-->
+
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabzlearn - todo app</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body onload="getTodosInLocal()">
+    <div class="wrapper">
+      <div class="title">
+        <h1>سبزلرن - تودو لیست</h1>
+      </div>
+
+      <div class="header-buttons">
+        <div class="sort-card">
+          <button class="sort-button">
+            <span class="sort-type">همه</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <div class="sort-menu">
+            <button value="all">همه</button>
+            <button value="completed">تکمیل شده ها</button>
+            <button value="uncompleted">تکمیل نشده ها</button>
+          </div>
+        </div>
+        <button class="open-modal-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15"
+            />
+          </svg>
+          ایجاد تسک
+        </button>
+      </div>
+
+      <section class="todos-container">
+        <!-- Todos Added By Js -->
+         
+      </section>
+    </div>
+
+    <div class="modal-screen hidden">
+      <div class="modal">
+        <header>
+          <button class="cancel-X">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <span> ایجاد تودو </span>
+        </header>
+        <main>
+          <div class="input-card">
+            <input
+              type="text"
+              class="input"
+              placeholder="عنوان تودو را وارد نمائید ..."
+            />
+          </div>
+
+          <div class="modal-checkbox">
+            <input type="checkbox" name="" id="has-date" />
+            <label for="has-date"> ایجاد تاریخ</label>
+          </div>
+        </main>
+        <footer>
+          <button class="cancel">انصراف</button>
+          <button class="create">ایجاد</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
